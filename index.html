@@ -3,76 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پورتفولیوی تخصصی | دکتر محمدرضا نصیری</title>
+    <title>پورتفولیوی علمی | دکتر محمدرضا نصیری</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- اضافه کردن آیکون‌های FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap');
         body { font-family: 'Vazirmatn', sans-serif; background-color: #0f172a; }
         
-        /* انیمیشن برای دکمه اینستاگرام */
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 15px rgba(217, 119, 6, 0.5); }
-            50% { box-shadow: 0 0 30px rgba(217, 119, 6, 0.9); }
+            0%, 100% { box-shadow: 0 0 15px rgba(217, 119, 6, 0.4); }
+            50% { box-shadow: 0 0 25px rgba(217, 119, 6, 0.8); }
         }
-        .btn-instagram {
-            animation: pulse-glow 2.5s infinite;
-        }
+        .btn-instagram { animation: pulse-glow 2.5s infinite; }
+        
+        /* افکت هاور برای کارت مقالات */
+        .article-card:hover { transform: translateY(-5px); border-color: #d97706; }
     </style>
 </head>
-<body class="text-gray-200 antialiased min-h-screen flex flex-col items-center py-12 px-4 sm:px-6">
+<body class="text-gray-200 antialiased min-h-screen flex flex-col items-center py-10 px-4 sm:px-6">
 
-    <!-- بخش پروفایل -->
-    <main class="w-full max-w-2xl bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-slate-700">
+    <main class="w-full max-w-3xl bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-slate-700">
         
-        <!-- هدر و تصویر -->
-        <div class="relative h-48 bg-gradient-to-r from-amber-900 to-slate-900 flex justify-center items-center">
-            <!-- الگوی محو در پس زمینه -->
-            <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#d97706 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <!-- هدر و کاور پس‌زمینه (طرح فرش/انتزاعی) -->
+        <div class="relative h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1583569704257-19349eb2f1c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-slate-900 bg-opacity-70"></div>
         </div>
         
-        <div class="px-6 pb-8 text-center -mt-16 relative z-10">
-            <!-- جایگاه عکس پروفایل -->
-            <img src="https://via.placeholder.com/150" alt="دکتر نصیری" class="w-32 h-32 mx-auto rounded-full border-4 border-slate-800 shadow-lg object-cover bg-slate-700 mb-4">
+        <div class="px-6 md:px-10 pb-10 text-center -mt-20 relative z-10">
             
-            <h1 class="text-3xl font-extrabold text-white mb-2">دکتر محمدرضا نصیری</h1>
-            <p class="text-amber-500 font-medium text-lg mb-6">پژوهشگر ارشد و کارشناس رسمی دادگستری در فرش</p>
+            <!-- ====== بخش عکس پروفایل ====== -->
+            <!-- برای تغییر عکس، کافیست نام فایل عکس خود (مثلا profile.jpg) را به جای آدرس زیر در قسمت src قرار دهید -->
+            <div class="relative inline-block mb-4">
+                <img src="https://ui-avatars.com/api/?name=دکتر+نصیری&background=d97706&color=fff&size=200&font-size=0.3" 
+                     alt="دکتر محمدرضا نصیری" 
+                     class="w-36 h-36 mx-auto rounded-full border-4 border-slate-800 shadow-xl object-cover bg-slate-700">
+                <div class="absolute bottom-2 right-2 bg-blue-500 text-white p-2 rounded-full border-2 border-slate-800 text-xs" title="تیک آبی / اعتبار">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
             
-            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-8 px-4">
-                توسعه‌دهنده مرزهای دانش در هنر-صنعت فرش، با تمرکز بر واکاوی نقوش نمادین، تحلیل کلان‌بافت‌های گبه و مدل‌سازی مفهومی طرح‌های اصیل.
+            <!-- اطلاعات فردی -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">دکتر محمدرضا نصیری</h1>
+            <p class="text-amber-500 font-semibold text-lg md:text-xl mb-6">پژوهشگر ارشد، کارشناس رسمی دادگستری و داور مجلات ISI</p>
+            
+            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-8 px-2 text-justify md:text-center">
+                متخصص در واکاوی نقوش نمادین، تحلیل کلان‌بافت‌ها و خلق مدل‌های مفهومی در هنر-صنعت فرش. هدف من تلفیق نگاه آکادمیک و میراث کهن فرش دستباف ایرانی است.
             </p>
 
-            <!-- دکمه اصلی هدایت به اینستاگرام (CTA) -->
-            <a href="https://instagram.com/nasiricarpet" target="_blank" class="btn-instagram block w-full bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-900 font-bold text-lg py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 mb-8 flex items-center justify-center gap-3">
-                <i class="fab fa-instagram text-2xl"></i>
-                همراهی در صفحه تخصصی nasiricarpet
+            <!-- ====== دکمه هدایت به اینستاگرام ====== -->
+            <a href="https://instagram.com/nasiricarpet" target="_blank" class="btn-instagram flex items-center justify-center gap-3 w-full bg-gradient-to-r from-amber-600 to-amber-500 text-slate-900 font-bold text-lg md:text-xl py-4 rounded-xl transition-all duration-300 mb-10 hover:from-amber-500 hover:to-amber-400">
+                <i class="fab fa-instagram text-3xl"></i>
+                پیوستن به صفحه تخصصی nasiricarpet
             </a>
 
-            <!-- بخش دستاوردها و پروژه‌ها -->
+            <!-- ====== بخش مقالات و پژوهش‌ها ====== -->
             <div class="text-right">
-                <h2 class="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2">پروژه‌های شاخص و دستاوردها</h2>
-                <ul class="space-y-4">
-                    <li class="bg-slate-700 p-4 rounded-lg border border-slate-600 hover:border-amber-500 transition-colors">
-                        <h3 class="font-bold text-white mb-1">تدوین مقالات علمی ISI</h3>
-                        <p class="text-slate-400 text-sm">عضو هیئت تحریریه و پژوهشگر ارشد در ارزیابی مقالات بین‌المللی</p>
-                    </li>
-                    <li class="bg-slate-700 p-4 rounded-lg border border-slate-600 hover:border-amber-500 transition-colors">
-                        <h3 class="font-bold text-white mb-1">واکاوی نقوش شیر صفوی</h3>
-                        <p class="text-slate-400 text-sm">پروژه تحقیقاتی در زمینه نمادشناسی و خلق نگاشت‌های مفهومی (Mind Maps)</p>
-                    </li>
-                    <li class="bg-slate-700 p-4 rounded-lg border border-slate-600 hover:border-amber-500 transition-colors">
-                        <h3 class="font-bold text-white mb-1">توسعه سیستم‌های داده‌محور فرش</h3>
-                        <p class="text-slate-400 text-sm">طراحی دایرکتوری و اپلیکیشن‌های محلی ثبت اطلاعات تخصصی فرش</p>
-                    </li>
-                </ul>
+                <div class="flex items-center gap-3 mb-6 border-b border-slate-600 pb-3">
+                    <i class="fas fa-book-open text-amber-500 text-xl"></i>
+                    <h2 class="text-2xl font-bold text-white">مقالات و پژوهش‌های علمی</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <!-- مقاله 1 -->
+                    <div class="article-card bg-slate-700 p-5 rounded-xl border border-slate-600 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-amber-900 text-amber-300 text-xs px-2 py-1 rounded">ISI</span>
+                            <i class="fas fa-file-pdf text-slate-400"></i>
+                        </div>
+                        <h3 class="font-bold text-white mb-2 leading-tight">واکاوی نقوش شیر صفوی در فرش‌های دستباف</h3>
+                        <p class="text-slate-400 text-sm mb-4">بررسی نمادشناسی و تحلیل ساختاری نگاره‌های تاریخی در فرش‌های دوره صفویه.</p>
+                        <!-- برای لینک دادن به PDF، آدرس فایل را در href بگذارید -->
+                        <a href="#" class="text-amber-500 text-sm font-semibold hover:text-amber-400 inline-flex items-center gap-1">
+                            مشاهده مقاله <i class="fas fa-chevron-left text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- مقاله 2 -->
+                    <div class="article-card bg-slate-700 p-5 rounded-xl border border-slate-600 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-blue-900 text-blue-300 text-xs px-2 py-1 rounded">پروژه تحقیقاتی</span>
+                            <i class="fas fa-project-diagram text-slate-400"></i>
+                        </div>
+                        <h3 class="font-bold text-white mb-2 leading-tight">تحلیل کلان‌بافت‌های گبه و نگاشت‌های مفهومی</h3>
+                        <p class="text-slate-400 text-sm mb-4">ایجاد نقشه ذهنی (Mind Map) و شناسایی شکاف‌های پژوهشی در ساختار گبه‌ها.</p>
+                        <a href="#" class="text-amber-500 text-sm font-semibold hover:text-amber-400 inline-flex items-center gap-1">
+                            جزئیات پژوهش <i class="fas fa-chevron-left text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- مقاله 3 / تخصص -->
+                    <div class="article-card bg-slate-700 p-5 rounded-xl border border-slate-600 transition-all duration-300 md:col-span-2">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2 py-1 rounded">داوری و کارشناسی</span>
+                            <i class="fas fa-gavel text-slate-400"></i>
+                        </div>
+                        <h3 class="font-bold text-white mb-2">ارزیابی و اصالت‌سنجی (دایرکتوری داده‌محور)</h3>
+                        <p class="text-slate-400 text-sm">
+                            توسعه چارچوب‌های کارشناسی حقوقی و ساخت اپلیکیشن‌های محلی ثبت اطلاعات (Data Entry) جهت یکپارچه‌سازی اطلاعات فرش.
+                        </p>
+                    </div>
+
+                </div>
             </div>
+            
         </div>
     </main>
 
-    <!-- فوتر مینیمال -->
-    <footer class="mt-8 text-slate-500 text-sm">
-        <p>طراحی شده برای نمایش در گیت‌هاب</p>
+    <footer class="mt-8 text-slate-500 text-sm flex gap-4">
+        <a href="mailto:your-email@example.com" class="hover:text-amber-500 transition"><i class="fas fa-envelope"></i> تماس با من</a>
+        <span>|</span>
+        <p>© 2026 دکتر محمدرضا نصیری</p>
     </footer>
 
 </body>
