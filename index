@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دکتر محمدرضا نصیری | متخصص و پژوهشگر ارشد فرش</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
+        body { font-family: 'Vazirmatn', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1600166898405-da9535204843?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="hero-bg text-white h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">دکتر محمدرضا نصیری</h1>
+        <p class="text-xl md:text-2xl font-light mb-8 text-gray-200">پژوهشگر ارشد، متخصص و کارشناس رسمی دادگستری در حوزه فرش</p>
+        <a href="#about" class="px-8 py-3 bg-amber-600 hover:bg-amber-700 transition duration-300 rounded-full text-lg font-medium shadow-lg">آشنایی بیشتر</a>
+    </header>
+
+    <!-- About & Expertise -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">تخصص و دستاوردها</h2>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
+                    با سال‌ها تجربه در واکاوی نقوش نمادین، بررسی ساختاری فرش‌های اصیل (از جمله نقوش شیر صفوی) و داوری مقالات معتبر ISI، هدف من ارتقای سطح علمی و کارشناسی در هنر-صنعت فرش است.
+                </p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-center">✓ کارشناس رسمی دادگستری</li>
+                    <li class="flex items-center">✓ پژوهشگر ارشد و هیئت تحریریه مجلات ISI</li>
+                    <li class="flex items-center">✓ مشاوره و توسعه راهبردهای دیجیتال (nasiricarpet)</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+                <h3 class="text-2xl font-bold mb-4 text-center text-amber-700">خدمات پژوهشی و مشاوره‌ای</h3>
+                <p class="text-gray-600 text-center mb-6">ارائه خدمات تخصصی در زمینه ارزیابی، اصالت‌سنجی و پروژه‌های تحقیقاتی پیشرفته.</p>
+                <button class="w-full py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">درخواست مشاوره</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>© 2026 تمامی حقوق برای دکتر محمدرضا نصیری محفوظ است.</p>
+    </footer>
+
+</body>
+</html>
